@@ -26,11 +26,14 @@ jobs:
             - name: add nx
               run: pnpm install nx -g
 
-            - name : Run build command
-              run: pnpm run start
+            # - name : Run build command
+            #   run: pnpm run start
 
-            - name: Upload artifact
-              uses: actions/upload-artifact@v4
-              with:
-                  name: my-artifact
-                  path: dist
+            # - name: Upload artifact
+            #   uses: actions/upload-artifact@v4
+            #   with:
+            #       name: my-artifact
+            #       path: dist
+
+            - name: pipeline complete
+              run: echo "pipeline is complete"
